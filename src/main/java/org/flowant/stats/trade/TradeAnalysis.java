@@ -49,7 +49,7 @@ public class TradeAnalysis {
 
         List<Doc> cagrList = hsCdYmMap.entrySet().stream().parallel()
                 .map(makeSpacerDocList)
-                .filter(list -> list.stream().noneMatch(doc -> doc.getExpDlr() < bottomValue))
+                .filter(list -> list.stream().noneMatch(doc -> doc.getLong(valueKey) < bottomValue))
                 .map(list -> new Doc(HS_CD, list.get(0).getHsCd()).append(CAGR, cagr(list, valueKey)))
                 .filter(Doc::isFiniteCagr)
                 .sorted(comparingDouble(Doc::getCagr).reversed())
