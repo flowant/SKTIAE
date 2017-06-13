@@ -1,0 +1,13 @@
+*.class
+bin/
+gen/
+.classpath
+.project
+proguard/
+.settings/
+*.iml
+*.ipr
+*.iws
+.idea/
+build/
+logs/
