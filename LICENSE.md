@@ -18,3 +18,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * [jfreechart](http://www.jfree.org/jfreechart/) (GNU Lesser General Public Licence) for chart output
 * [junit4](http://junit.org/junit4/) (Eclipse Public License - v 1.0) for test
 * [gradle](https://gradle.org/) (Apache License 2.0) for build
+* [iros_cipher.jar](https://www.data.go.kr/information/PDS_0000000000000014/recsroom.do) provided by [Open Data Portal](https://www.data.go.kr/) for downloading trade information
