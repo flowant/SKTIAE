@@ -7,6 +7,7 @@ import static org.flowant.stats.trade.TradeParser.RESULT_CODE;
 import static org.flowant.stats.trade.TradeParser.SUCCESS_00;
 import static org.flowant.util.FileUtil.listFiles;
 import static org.flowant.util.FileUtil.rmdirs;
+import static org.flowant.util.FileUtil.mkdirs;
 import static java.util.stream.Collectors.*;
 
 import java.io.FileInputStream;
@@ -47,6 +48,7 @@ public class TradeFiles {
 
     static {
         try {
+            mkdirs(repositoryPath);
             cacheFileNames();
         } catch (IOException e) {
             logger.severe(e.getMessage());

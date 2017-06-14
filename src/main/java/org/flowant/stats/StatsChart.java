@@ -114,8 +114,9 @@ public class StatsChart extends ApplicationFrame {
 
     protected CategoryDataset createDataset(List<List<Doc>> list) {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        mapRowDesc.putAll(makeRowDescMap.apply(
-                list.stream().parallel().map(docList -> docList.get(0).getString(rowKey)).collect(toList())));
+
+        mapRowDesc.putAll(makeRowDescMap.apply(list.stream().parallel().filter(l -> l.size() > 0)
+                .map(docList -> docList.get(0).getString(rowKey)).collect(toList())));
 
         list.forEach(subList -> subList.forEach(doc -> {
             dataset.addValue(doc.getLong(valueKey), getRowWithDesc(doc.getString(rowKey)), doc.getString(columnKey));
