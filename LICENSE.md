@@ -1,4 +1,4 @@
-**SKTIAE** is distributed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). This gives everyone the freedoms to use openFrameworks in any context: commercial or non-commercial, public or private, open or closed source.
+**SKTIAE** is distributed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). This gives everyone the freedoms to use **SKTIAE** in any context: commercial or non-commercial, public or private, open or closed source.
 
 ---
 
